@@ -1,0 +1,102 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#btn {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  /* border: black; */
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-color: aqua;
+  border-top-color: brown;
+  border-left-color: brown;
+  border-right-color: aqua;
+}
+#btn:hover {
+  background-color:gray;
+  color: white;
+}
+.input-group{
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+#output{
+  box-shadow: 0.4px 0.4px 4px , -0.3px -0.3px 4px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: .50rem;
+
+}
+#copy-btn{
+  box-shadow: 0.4px 0.4px 4px , -0.3px -0.3px 4px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: .50rem 1rem;
+}
+
+.show {
+  font-size: 1.20rem;
+  font-weight: bold;
+  color: black;
+  background-color: chartreuse;
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  box-shadow:1px 1px 3px rgba(255, 0, 0, 0.534), -1px -1px 3px rgba(255, 0, 0, 0.657);
+}
+.show-animetion-in {
+  animation: show-animetion-in 0.5s ease-in;
+}
+.show-animetion-out {
+  animation: show-animetion-out 0.5s ease-in;
+}
+
+@keyframes show-animetion-in {
+  from {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes show-animetion-out {
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+    to {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+  }
